@@ -1,0 +1,287 @@
+/* 전체초기화 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    letter-spacing: -1px;
+    overflow-x: hidden;
+    font: 1.1em 'NanumSquare', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222831;
+}
+
+/* 폰트설정 */
+
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../font/NanumSquareR.eot') format('embedded-opentype'),
+    url('../font/NanumSquareR.woff') format('woff'),
+    url('../font/NanumSquareR.ttf') format('ttf');
+}
+
+h1, h2, h4 {
+    font-family: 'Arita-buri-SemiBold';
+    color: #222831;
+}
+
+p, h3 {
+    font-size: 18px;
+    font:1.2em/1.3em 'NanumSquare', sans-serif;
+    color: #222831;
+}
+
+span {
+    color: #D65A31;
+    font-weight: 800;
+    font: 'NanumSquare', sans-serif;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/* 구글 아이콘 설정 */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* area_nav */
+#area_nav_wrap {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.area_nav ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.area_nav img {
+    width: 17px;
+}
+
+.area_nav_tab {
+    display: flex;
+    justify-content: center;
+}
+
+.area_nav ul li a {
+    font-size: 17px;
+    color: #C0C1C1;
+}
+
+.area_nav_tab a {
+    display: block;
+    padding: 14px 60px;
+}
+
+.area_nav_tab ul {
+    padding-top: 40px;
+}
+
+.area_nav_tab ul li {
+    list-style: none;
+    border: 1px solid #D0D0D0;
+    font-size: 17px;
+    float: left;
+    margin-right: -1px;
+    /* margin-left: -1px; */
+}
+
+.area_nav_tab .tab-1 {
+    border: 1px solid #D65A31;
+}
+
+.area_nav_tab .tab-1 a {
+    color: #D65A31;
+}
+
+.area_nav_tab .tab-2 {
+    border-left: 1px solid #D65A31;
+}
+
+.area_nav_tab .tab-2 > a:hover, .tab-3 > a:hover {
+    color: #D65A31;
+}
+
+/* content-1 */
+#content-1 {
+    background-image: url(../images/sub-content-bg.png);
+    margin-top: 100px;
+    height: 630px;
+    background-size : cover;
+}
+
+.content-1-wrap {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-1-wrap h1 {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 108px;
+}
+
+.content-1-wrap p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+.line-wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.line {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #fff;
+    height: 100px;
+  }
+
+/* content-2 */
+#content-2 {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 130px;
+    position: relative;
+}
+
+#content-2 h1 {
+    font-size: 40px;
+}
+
+#content-2 .quotes-left {
+    position: absolute;
+    left: 405px;
+    bottom: 240px;
+}
+
+#content-2 .quotes-right {
+    position: absolute;
+    left: 870px;
+    bottom: 166px;
+}
+
+#content-2 p {
+    font-size: 17px;
+    margin: 90px 0 80px 0;
+    line-height: 26px;
+}
+
+#icon {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 130px;
+}
+
+.content-2-icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle {
+    width: 252px;
+    height: 252px;
+    border: 1px solid #E6E6E6;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s;
+}
+
+.circle .circle-txt {
+    float: left;
+    width: 252px;
+    margin-top: 38%;
+}
+
+.circle .circle-txt h2 {
+    padding-top: 10px;   
+}
+
+.circle:hover {
+    box-shadow: 1px 4px 10px 1px rgb(0 0 0 / 8%);
+}
+
+
+
+/* footer */
+footer {
+    background: #FBF8F6;
+    height: 250px;
+}
+
+.footer-wrap {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer img {
+        width: 180px;
+        padding: 50px 0 20px 0; 
+}
+
+footer p{
+    color: #9E9995;
+    font-size: 16px;
+    padding-bottom: 10px;
+}

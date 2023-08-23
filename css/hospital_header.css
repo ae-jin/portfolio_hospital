@@ -1,0 +1,141 @@
+/* header */
+
+header { 
+    margin: 0 auto; 
+    width: 100%; 
+    height: 160px; 
+    position: relative; 
+    background-color: #FBF8F6; 
+    z-index: 1000;
+}
+
+.logo {
+    background: #FBF8F6;
+    height: 100px;
+    text-align: center;
+}
+
+.logo img {
+    width: 160px;
+    padding-top: 21px;
+}
+
+/* login */
+.login {
+    position: absolute;
+    right: 20%;
+    top: 30%;
+}
+
+.login ul {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.login ul li {
+    float: left;
+}
+
+.login ul li a {
+    font-size: 19px;
+    padding: 0 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #3f4652;
+}
+
+.login ul li:after {
+    content: "|";
+    color: rgb(136, 133, 133);
+    float: right;
+    margin-top: 5px;
+}
+
+.login ul li:last-child::after {
+    content: "";
+}
+
+/* navi */
+nav { 
+    background-image: url(../images/gnb_bg.png);
+    width: 100%; 
+    height: 62px;
+    line-height: 38px;
+    position: relative;
+}
+
+nav > ul { 
+    overflow: hidden;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav > ul > li { 
+    float: left; 
+    width: 166px; 
+    text-align: center; 
+    border-left: 1px solid #40332C;
+    border-right: 1px solid rgba(255, 255, 255, 10%);
+}
+
+nav > ul > li:after {
+    content: "";
+    position: absolute;
+    right: 286px;
+    width: 1px;
+    height: 62px;
+    background: rgba(64,51,44, 8%);
+}
+
+nav > ul > li:before {
+    content: "";
+    position: absolute;
+    left: 287px;
+    width: 1px;
+    height: 62px;
+    background: rgba(255, 255, 255, 1%);
+}
+
+nav > ul > li > a { 
+    display: inline-block; 
+    padding: 12px 0px; 
+    width: 100%;
+    font-size: 17px;
+    color: #fff; 
+}
+
+nav > ul > li:hover > a { 
+    color: #fff;  
+}
+
+.submenu { 
+    display: none; 
+    position: absolute; 
+    z-index: 99; 
+    text-align: center; 
+    background: #fff; 
+    border: 1px solid rgba(255, 255, 255, 20%);
+    box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 5%);
+}
+
+.submenu > li > a { 
+    display: inline-block; 
+    padding: 14px 0px; 
+    color: #3f4652; 
+    width: 162px ; 
+    font-size: 14px;
+    font-weight: bold; 
+}
+
+.submenu > li > a:hover { 
+    color: #D65A31;
+    transition: 0.5s;
+}
+
+
+
+
+
